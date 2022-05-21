@@ -1,0 +1,116 @@
+/* Primera sección - Quienes somos? */
+
+#quienes-somos {
+  padding: 0.5rem;
+  background-color: #39816b27;
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2);
+        grid-column-gap: 0px;
+        grid-row-gap: 5px;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+      }
+      .text {
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: left;
+        padding: 0.5rem;
+      }
+      .video {
+        grid-area: 2 / 1 / 3 / 2;
+            iframe {
+              border: $bordercuadrado;
+              width: 16rem;
+              height: 10rem;
+            }
+      }
+      h2 {
+        text-align: center;
+      }
+      ul {
+        padding: 0.6rem 2rem;
+            li {
+              font-size: 1rem;
+              list-style: disc;
+            }
+      }
+
+}
+
+/* Empiezan los Media por resolución */
+@media screen and (min-width: 375px) {
+  #quienes-somos .container .video iframe {
+    width: 20rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #quienes-somos .container .video iframe {
+    width: 26rem;
+    height: 16rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  #quienes-somos {
+    background-color: #39816b27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+        .container .video iframe {
+          width: 44rem;
+          height: 22rem;
+        }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+#quienes-somos {
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      margin: 0rem 4rem;
+          .video iframe {
+            width: 24rem;
+            height: 14rem;
+            animation: video1 1s scroll 0s 1 normal;
+                  @keyframes video1 {
+                  0% {
+                    transform: scaleX(0.4);
+                    transform-origin: 100% 100%;
+                  }
+                  100% {
+                    transform: scaleX(1);
+                    transform-origin: 100% 100%;
+                  }
+                  }
+          }
+    }
+    .text {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .video {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+}
+}
+
+@media screen and (min-width: 1440px) {
+  #quienes-somos {
+    height: 100vh;
+        .container .video iframe {
+        width: 40rem;
+        height: 22rem;
+        animation: video1 1s ease-in-out 0s 1 normal;
+        } 
+  }
+}

@@ -1,0 +1,9 @@
+@mixin imagenesSizes($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: $borderRadius;
+}
+
+@mixin name {
+    
+}

@@ -1,0 +1,65 @@
+/* Global config */
+/* A CSS reset. It is a way to make sure that all browsers start with the same CSS. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+li {
+  font-size: 1rem;
+}
+button {
+  background-image: linear-gradient(
+    to right,
+    #4caf50 0%,
+    #08e225 50%,
+    #4caf50 100%
+  );
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid #00000080;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 100% auto;
+  color: white;
+  box-shadow: 0 0 3px rgb(0, 0, 0);
+  border-radius: 0.5rem;
+
+    &:hover {
+    background-position: right center;
+    background: #02c432;
+    text-decoration: none;
+}
+}
+/* contenedor de la pagina */
+/* Setting the max-width of the container to 1440px and centering it. */
+.container {
+  max-width: 1440px;
+  margin: auto;
+}

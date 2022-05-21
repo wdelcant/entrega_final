@@ -1,0 +1,111 @@
+/* Botón flotante subir y Whatsapp*/
+.btn-flotante {
+  display: none;}
+
+.wsp-flotante {
+  display: none;}
+
+
+.wsp-mini {
+  position: fixed;
+  display: inline;
+  z-index: 99;
+  transition: all 300ms ease 0ms;
+      &:hover {
+          transform: translateY(-7px);
+          color: rgb(255, 255, 255);
+          
+        }
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  bottom: 10px;
+  left: 5px;
+        img {
+        width: 3rem;
+      }
+}
+
+@media screen and (min-width: 768px) {
+.wsp-mini {
+  display: none;}
+
+
+
+
+  .boton {
+  position: fixed;
+  display: inline;
+  z-index: 99;
+  transition: all 300ms ease 0ms;
+      &:hover {
+          transform: translateY(-7px);
+          color: rgb(255, 255, 255);
+          
+        }
+  text-decoration: none;
+  
+  }
+
+
+  .wsp-flotante {
+    @extend .boton;
+    padding: 0.8rem 1.2rem;
+    bottom: 10px;
+    left: 40px;
+        img {
+        width: 10rem;
+      }
+    animation: wsp-flotante 1s ease-in-out 0s 1 normal;
+}
+    @keyframes wsp-flotante {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.btn-flotante {
+    @extend .boton;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c7c7c7;
+    border-radius: $borderRadius;
+    letter-spacing: 2px;
+    background-color: #4caf50;
+    padding: 18px 30px;   
+    bottom: 10px;
+    right: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    animation: btn-flotante 1s ease-in-out 0s 1 normal;
+  }
+
+@keyframes btn-flotante {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+  .rocketfloat {
+    width: 1.2rem;
+    color: #c7c7c7;
+  }
+
+
+
+
+
+}
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description -->
+    <meta name="description" content="Arriendo de cabañas en la comuna de Olmué, Quinta region de Chile">
+    <!-- Keywords -->
+    <meta name="keywords" content="cabanas, olmue, quinta region, valparaiso, entretencion, piscina, quincho, cabañas">
+    <!-- icono de la web -->
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+    <!-- Normalizado de css  -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Estilos propios y Bootstrap -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/e8c7b87e1f.js" crossorigin="anonymous"></script>
+    <!-- titulo -->
+    <title>Cabañas Olmué - Arriendos 24/7</title>
+</head>
+
+<body>
+    <!-- Logo y menu de navegación con bootstrap-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-fondo">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="./index.html">Cabañas <span class="logo-span">Olmué</span></a>
+
+                <button class="navbar-toggler btn-outline-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Quienes somos?</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galería</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#location">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/cabanas.html">Cabañas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/entretenciones.html">Entretención</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" action="./pages/registrate.html">
+                        <button class=" btn-outline-success me-2 reg" type="submit">Mi Cuenta </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inicio del contenido -->
+    <main>
+        <!-- banner de bienvenida -->
+        <section id="banner">
+            <h1>Visita el mejor lugar de relajo en <span>Olmué</span></h1>
+            <form action="#">
+                <button>Reserva ahora!</button>
+            </form>
+        </section>
+
+        <!-- Sección quienes somos? -->
+        <section id="quienes-somos">
+            <div class="container">
+                <div class="text">
+                    <div class="img-container"></div>
+                    <h2>Quienes Somos?</h2>
+                    <p>Somos una PYME familiar, arriendo de cabañas totalmente equipadas y amplia piscina.
+                        Contamos con variedad de eventos, tales como:</p>
+                    <ul>
+                        <li>Cumpleaños</li>
+                        <li>Matrimonios</li>
+                        <li>Fiestas de empresas</li>
+                        <li>Fiestas de graduaciones</li>
+                        <li>Celebración de bautizos</li>
+                        <li>Aniversarios de boda</li>
+                        <li>Servicios de gastronomía (Desayuno, almuerzo y once)</li>
+                    </ul>
+                    <p> Eso y mucho mas, Te esperamos!</p>
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Transparencia</li>
+                        <li>Liderazgo</li>
+                        <li>Innovación</li>
+                        <li>Calidad en el Servicio</li>
+                    </ul>
+                </div>
+                <div class="video">
+                    <iframe title="Video de youtube" src="https://www.youtube.com/embed/t4bpIj7vJoM"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección galería de imágenes -->
+        <section id="galeria">
+            <div class="text">
+                <h2>Galería de fotos</h2>
+                <p>Puedes ver algunas de nuestras fotos de nuestras cabañas y piscina.</p>
+            </div>
+            <!-- inicio del carrousel -->
+            <div id="slider-main" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner img-max container">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/foto1.jpg" class="d-block w-auto" alt="piscina en atardecer">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto2.jpg" class="d-block w-auto"
+                            alt="muestra imagen de psicina en altura">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto3.jpg" class="d-block w-auto"
+                            alt="muestra imagen del quincho con mesa y parrilla">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto4.jpg" class="d-block w-auto"
+                            alt="comedor de la cabaña con mesas y sillas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto5.jpg" class="d-block w-auto"
+                            alt="comedor visto desde otro angulo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto10.jpeg" class="d-block w-auto" alt="cocina full equipada">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto7.jpeg" class="d-block w-auto" alt="campo verde">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto12.jpeg" class="d-block w-auto" alt="baño publico al aire libre">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto13.jpeg" class="d-block w-auto"
+                            alt="campo verde con vista a las cabañas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto14.jpeg" class="d-block w-auto"
+                            alt="campo verde con vistas al quincho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/foto15.jpeg" class="d-block w-auto"
+                            alt="pileta con vista al campo verde">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider-main" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Atrás</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider-main" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Adelante</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- sección ubicación -->
+        <section id="location">
+            <div class="container">
+                <div class="location-div">
+                    <iframe title="Mapa del sector"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d267.0998521491444!2d-71.17916847203547!3d-33.011918147163904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scl!4v1651429433381!5m2!1ses-419!2scl style="
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="text1">
+                    <h2>Ubicación</h2>
+                    <p>Estamos ubicados a pasos del centro, y muy cerca de tu relajo.</p>
+                    <p>Ante cualquier duda no dudes en llamar en el horario de oficina.</p>
+                    <p>También puedes comunicarte con nosotros a traves de WhatsApp</p>
+
+                </div>
+
+                <div class="text2">
+                    <h3>Cabañas Olmué</h3>
+                    <p>London Miraflores 5000, Olmué</p>
+                    <p>contacto@cabanasolmue.cl</p>
+                </div>
+
+                <div class="text3">
+                    <h3>Horario de atención</h3>
+                    <p>Todos los días de 09:00 a 19:00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- Pie de paginado -->
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <!-- Menu general web -->
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="./pages/eventos.html">Eventos</a></li>
+                        <li><a href="./pages/cabanas.html">Cabañas</a></li>
+                        <li><a href="./pages/entretenciones.html">Entretención</a></li>
+                    </ul>
+                </div>
+
+                <!-- Menu interno de index  -->
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Quienes somos?</h3>
+                    <ul>
+                        <li><a href="#quienes-somos">Nosotros</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#location">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- suscripción a noticias -->
+                <div class="col-sm-4 col-md-3 item barra">
+                    <h3>Recibe nuestras ofertas!</h3>
+                    <form>
+                        <ul>
+                            <li>
+                                <input class="barra-subscriptions" type="email"
+                                    placeholder="Dirección de correo electrónico">
+                            </li>
+                            <li>
+                                <button>SUSCRÍBETE</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="col-lg-3 item social">
+                    <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/56954205188" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="mailto:wilsondelcanto.redes@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+                    <!-- Derechos de autor -->
+                    <p class="copyright"><a href="#">Cabañas Olmué &copy;, Chile. 2022</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Imagen de WhatsApp y Subir -->
+    <a href="https://wa.me/56954205188" target="_blank" class="wsp-flotante"><img src="./assets/images/wspbutton.png"
+            alt="Whatsapp"></a>
+
+    <a href="https://wa.me/56954205188" target="_blank" class="wsp-mini"><img src="./assets/images/wspmini.png"
+            alt="Whatsapp"></a>
+
+    <a href="#" class="btn-flotante">Subir <i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+    <!-- Link a boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

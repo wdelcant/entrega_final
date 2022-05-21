@@ -1,0 +1,22 @@
+//Reset
+@import 'reset';
+
+/* Importing the variables.scss file. */
+@import 'variables';
+
+/* Importing the mixins.scss file. */
+@import 'mixins';
+
+// Secciones de la web
+@import 'nav';
+@import 'banner';
+@import 'aboutus';
+@import 'carrousel';
+@import 'location';
+@import 'footer';
+@import 'floatButton';
+
+@import 'events';
+@import 'cabanas';
+@import 'entertaiments';
+@import 'register';

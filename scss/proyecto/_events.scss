@@ -1,0 +1,108 @@
+
+/* Pagina de eventos */
+#eventos {
+  background-image: linear-gradient(0deg, #00000080, #00000080),
+    url("../assets/images/foto2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $textcarta;
+
+      .container {
+        line-height: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+        margin: auto;
+            div:nth-child(odd) {
+              background: $carta1;
+              border-radius: $borderRadius;
+              padding: 0.2rem;
+              text-align: center;
+              margin: 2rem 0rem;
+              border: $border;
+              box-shadow: $shadow;
+            }
+            div:nth-child(even) {
+              background: $carta2;
+              border-radius: $borderRadius;
+              padding: 0.2rem;
+              text-align: center;
+              border: $border;
+              box-shadow: $shadow;
+            }
+            h2 {
+                text-align: center;
+                padding: 2rem;
+              }
+            img {
+              width: 14rem;
+              border-radius: $borderRadius;
+              margin: 2rem;
+              border: $border;
+              }
+      }
+}
+
+/* Empiezan los Media por resolución */
+@media screen and (min-width: 768px) {
+
+#eventos {
+    .container {
+      div:nth-child(odd) {
+        padding: 2rem;
+
+      }
+      div:nth-child(even) {
+        padding: 2rem;
+
+      }
+      img {
+        width: 20rem;
+        height: 14rem;
+        border-radius: $borderRadius;
+      }
+      p {
+        font-size: 1.2rem;
+        margin: 0rem 5rem;
+      }
+    }
+}
+}
+
+@media screen and (min-width: 1024px) {
+
+  #eventos {
+    .container {
+      img {
+        width: 24rem;
+        height: 18rem;
+        border-radius: $borderRadius;
+      }
+      p {
+        font-size: 1.2rem;
+        margin: 0rem 15rem;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem;
+      }
+      h3 {
+      font-size: 1.6rem;
+    }
+        }
+}
+}
+@media screen and (min-width: 1440px) {
+  #eventos {
+    .container {
+      img {
+        width: 36rem;
+        height: 20rem;
+        border-radius: $borderRadius;
+    }
+    }
+  }
+}

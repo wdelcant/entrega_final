@@ -1,0 +1,112 @@
+/* galería sección */
+
+#galeria {
+  background-color: #c2c2c249;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+
+
+      img {
+        height: 10rem
+      }
+      button {
+        font-size: none;
+        font-weight: bold;
+        border: none;
+        padding: none;
+        text-align: none;
+        text-transform: none;
+        transition: none;
+        background-size: none;
+        color: white;
+        box-shadow: none;
+        border-radius: none;
+            &:hover {
+              background: #ffffff00;
+            }
+      }
+      }
+      .text {
+        flex-flow: column nowrap;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+
+
+@media screen and (min-width: 375px) {
+  #galeria img {
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #galeria img {
+    height: 16rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #galeria {
+    background-color: #c2c2c249;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem;
+        img {
+          height: 27rem;
+        }
+        .text {
+          flex-flow: column nowrap;
+          line-height: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+    .container {
+      width: 660px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #galeria {
+    background-color: #c2c2c249;
+    padding: 2rem;
+        .text {
+          flex-flow: column nowrap;
+          line-height: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+    .container {
+      width: 720px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  #galeria {
+    background-color: #c2c2c249;
+    padding: 2rem;
+    height: 100vh;
+        .text {
+          flex-flow: column nowrap;
+          line-height: 1.5rem;
+          padding-bottom: 1.5rem;
+          color: #000000;
+        }
+    .container {
+      width: 1190px;
+    }
+  }
+
+    #galeria img {
+    height: 45rem;
+    width: 20rem;
+  }
+}

@@ -1,0 +1,87 @@
+/* logo y menu */
+/* The CSS code for the navbar. */
+.nav-fondo {
+  background: linear-gradient(270deg, #009687, #0e6c16, #45b405);
+  background-size: 600% 600%;
+  border-bottom: solid 0.4rem #ffe711bd;
+  animation: header 30s ease infinite;
+}
+@keyframes header {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.logo {
+  font-weight: bold;
+  color: white;
+  text-shadow: 0.3rem 0.3rem 0.5rem #00000080;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+      .logo-span {
+    color: #d2ff08;
+    }
+
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+}
+    .navbar-nav {
+    text-align: center;
+      .nav-item {
+      border-bottom: solid 1px white;
+      }
+  
+  }
+.reg {
+  color: #c0c0c0;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .logo {
+    transition: transform 300ms ease-in-out;
+    font-size: 1.2rem;
+        &:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+        }
+    }
+
+  .navbar-nav {
+    text-align: justify;
+        .nav-item {
+          border-bottom: 0;
+          }
+  }
+}  
+
+
+
+@media screen and (min-width: 1024px) {
+
+  .logo {
+    transition: transform 300ms ease-in-out;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+
+    }
+
+@media screen and (min-width: 1440px) {
+
+
+  .logo {
+    font-size: 2rem;
+    
+  }}
+
+  .navbar-nav {
+    padding: 0rem 2rem;
+  }
+}

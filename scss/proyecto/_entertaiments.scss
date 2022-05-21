@@ -1,0 +1,109 @@
+
+/* Pagina de Entretención */
+#entertainments {
+  background-image: linear-gradient(0deg, #00000080, #00000080),
+    url("../assets/images/foto12.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $textcarta;
+      .container {
+        line-height: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        max-width: 1200px;
+
+/* maps con variable desde variables.scss */
+        $cartas:(
+          carta1: $carta1,
+          carta2: $carta2
+        );
+
+        @each $var, $color in $cartas {
+          .car-#{$var}{
+              background-color: $color;
+              border-radius: $borderRadius;
+              padding: 0.2rem;
+              text-align: center;
+              margin: 1rem 0rem; 
+              border: $border;
+              box-shadow: $shadow;
+          }
+        }
+            h2 {
+              text-align: center;
+              padding: 2rem;
+            }
+            img {
+              width: 14rem;
+              height: 12rem;
+              border-radius: 1rem;
+              margin: 2rem;
+              border: $border;
+            }
+            p {
+              font-size: 1rem;
+            }
+      }
+}
+
+/* Empiezan los Media por resolución */
+@media screen and (min-width: 768px) {
+#entertainments {
+        .container {
+            div:nth-child(odd) {
+              padding: 2rem;
+              
+            }
+            div:nth-child(even) {
+              padding: 2rem;
+            }
+            h2 {
+              text-align: center;
+              padding: 2rem;
+            }
+            img {
+              width: 20rem;
+              height: 14rem;
+              border-radius: $borderRadius;
+            }
+            p {
+              font-size: 1.2rem;
+              margin: 0rem 5rem;
+            }
+        }
+
+}
+
+@media screen and (min-width: 1024px) {
+#entertainments {
+    .container img {
+      width: 24rem;
+      height: 18rem;
+      border-radius: $borderRadius;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+    font-size: 1.2rem;
+    margin: 0rem 15rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+}
+}}
+
+@media screen and (min-width: 1440px) {
+  #entertainments {
+    .container {
+      img {
+        width: 36rem;
+        height: 20rem;
+        border-radius: $borderRadius;
+    }
+    }
+  }
+}
